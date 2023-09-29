@@ -1,0 +1,31 @@
+name: PHP Quality Assurance
+on:
+  pull_request:
+    types: [ assigned, opened, reopened, ready_for_review, synchronize ]
+
+  push:
+    branches:
+      - 'release*/[0-9]+.[0-9]+'
+      - 'development*/[0-9]+.[0-9]+'
+
+    paths:
+      - '**.php'
+      - '**/workflows/*php*'
+
+jobs:
+  lint-php:
+    uses: inpsyde/reusable-workflows/.github/workflows/lint-php.yml@main
+    with:
+      PHP_MATRIX: '["8.0", "8.1", "8.2"]'
+
+  coding-standards-analysis-php:
+    uses: inpsyde/reusable-workflows/.github/workflows/coding-standards-php.yml@main
+
+  static-code-analysis-php:
+    uses: inpsyde/reusable-workflows/.github/workflows/static-analysis-php.yml@main
+
+  tests-unit-php:
+    uses: inpsyde/reusable-workflows/.github/workflows/tests-unit-php.yml@main
+    with:
+      PHP_MATRIX: '["8.0", "8.1"]'
+      PHPUNIT_ARGS: '--no-coverage --testsuite=unit'

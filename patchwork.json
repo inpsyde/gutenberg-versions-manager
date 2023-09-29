@@ -1,0 +1,5 @@
+{
+  "redefinable-internals": [
+    "is_readable"
+  ]
+}

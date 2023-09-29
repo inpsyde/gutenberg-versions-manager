@@ -1,0 +1,7 @@
+/vendor/
+/.psalm
+/.idea
+
+/auth.json
+/.phpunit.result.cache
+/composer.lock

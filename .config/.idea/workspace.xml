@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Sources" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8a7ca6e7-3730-43bb-b754-c0aca105634a" name="Changes" comment="Remove Todo">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpcs.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE" updatePackages="false">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <interpreter name="MhGutenbergVersionToggler" composer="composer" />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="Sources" pattern="file[mh-gutenberg-version-toggler]:src//*" />
+  </component>
+  <component name="PHPCodeSnifferProjectConfiguration">
+    <option name="selectedConfigurationId" value="2f177efb-458c-4d9e-bc5e-ba61e590c8ff" />
+  </component>
+  <component name="PhpDebugGeneral" max_simultaneous_connections="1" xdebug_force_break_when_no_path_mapping="false" xdebug_force_break_when_outside_project="false" />
+  <component name="PhpServers">
+    <servers>
+      <server host="mhh-global-website.local" id="8f605425-7c87-461b-ae06-f179187a809a" name="mhh-global-website.local" port="443" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/var/www/wordpress/packages/mh-gutenberg-version-toggler" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="MhGutenbergVersionToggler">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/mikey179" />
+      <path value="$PROJECT_DIR$/vendor/brain" />
+      <path value="$PROJECT_DIR$/vendor/inpsyde" />
+      <path value="$PROJECT_DIR$/vendor/mockery" />
+    </include_path>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2EqQk4JlJygr8VNOqHESucDdLw9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TODO_SCOPE": "Sources",
+    "WebServerToolWindowFactoryState": "false",
+    "com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary": "PHPUnit",
+    "credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm": "Docker Compose",
+    "credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm": "Docker Compose",
+    "last_opened_file_path": "//wsl$/Ubuntu-2004/home/guido/development/inpsyde/mh-gutenberg-version-toggler/.config/.idea",
+    "nodejs.protractor.protractor_package": "",
+    "nodejs_package_manager_path": "npm",
+    "php.override.implement.member.chooser.php.doc": "NONE",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php"
+  }
+}]]></component>
+  <component name="PsalmProjectConfiguration">
+    <option name="selectedConfigurationId" value="2f177efb-458c-4d9e-bc5e-ba61e590c8ff" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu-2004\home\guido\development\inpsyde\mh-gutenberg-version-toggler\.config\.idea" />
+      <recent name="\\wsl$\Ubuntu-2004\home\guido\development\inpsyde\mh-gutenberg-version-toggler" />
+      <recent name="\\wsl$\Ubuntu-2004\home\guido\development\inpsyde\mh-gutenberg-version-toggler\src\Service" />
+      <recent name="\\wsl$\Ubuntu-2004\home\guido\development\inpsyde\mh-gutenberg-version-toggler\tests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu-2004\home\guido\development\inpsyde\mh-gutenberg-version-toggler\.config\.idea\inspectionProfiles" />
+      <recent name="\\wsl$\Ubuntu-2004\home\guido\development\inpsyde\mh-gutenberg-version-toggler\.config\.idea" />
+      <recent name="\\wsl$\Ubuntu-2004\home\guido\development\inpsyde\mh-gutenberg-version-toggler\tests\unit\Service" />
+      <recent name="\\wsl$\Ubuntu-2004\home\guido\development\inpsyde\mh-gutenberg-version-toggler\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHPUnit.VersionActivatorTest">
+    <configuration name="CachedSupportedVersionPathDiscoveryTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Mh\GutenbergVersionToggler\Tests\Unit\Service\CachedSupportedVersionPathDiscoveryTest" configuration_file="/app/phpunit.xml" file="$PROJECT_DIR$/tests/src/Unit/Service/CachedSupportedVersionPathDiscoveryTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CachedSupportedVersionPathDiscoveryTest.for_theme" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Mh\GutenbergVersionToggler\Tests\Unit\Service\CachedSupportedVersionPathDiscoveryTest" configuration_file="/app/phpunit.xml" file="$PROJECT_DIR$/tests/src/Unit/Service/CachedSupportedVersionPathDiscoveryTest.php" method="for_theme" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="VersionActivatorTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Mh\GutenbergVersionToggler\Tests\Integration\Service\VersionActivatorTest" configuration_file="/app/phpunit.xml" file="$PROJECT_DIR$/tests/integration/Service/VersionActivatorTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="VersionActivatorTest.does_not_activate_gutenberg_because_no_compatible_versions_found" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Mh\GutenbergVersionToggler\Tests\Integration\Service\VersionActivatorTest" configuration_file="/app/phpunit.xml" file="$PROJECT_DIR$/tests/integration/Service/VersionActivatorTest.php" method="does_not_activate_gutenberg_because_no_compatible_versions_found" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+    <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner configuration_file="/app/phpunit.xml" directory="$PROJECT_DIR$/tests" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.tests" />
+        <item itemvalue="PHPUnit.VersionActivatorTest.does_not_activate_gutenberg_because_no_compatible_versions_found" />
+        <item itemvalue="PHPUnit.VersionActivatorTest" />
+        <item itemvalue="PHPUnit.CachedSupportedVersionPathDiscoveryTest.for_theme" />
+        <item itemvalue="PHPUnit.CachedSupportedVersionPathDiscoveryTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="true" />
+    <MESSAGE value="Introduce Gutenberg Activation" />
+    <MESSAGE value="Remove `.phpunit.result.cache`" />
+    <MESSAGE value="Introduce `ActivateGutenbergVersionFactory`" />
+    <MESSAGE value="Reduce method naming redundancy" />
+    <MESSAGE value="Introduce Package and Providers" />
+    <MESSAGE value="Implementation is completed" />
+    <MESSAGE value="Remove some todos" />
+    <MESSAGE value="Introduce QA in CI" />
+    <MESSAGE value="Remove Todo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove Todo" />
+  </component>
+  <component name="WordPressConfiguration" enabled="true">
+    <wordpressPath>\\wsl$\Ubuntu-2004\home\guido\development\inpsyde\mh-gutenberg-version-toggler\vendor\wordpress\wordpress</wordpressPath>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/mh_gutenberg_version_toggler@PluginUrlFixerTest_maybe_fix_url_return_empty_string_because_invalid_common_relative_path.xml" NAME="PluginUrlFixerTest.maybe_fix_url_return_empty_string_because_invalid_common_relative_path Coverage Results" MODIFIED="1664387962627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mh_gutenberg_version_toggler@CachedSupportedVersionPathDiscoveryTest.xml" NAME="CachedSupportedVersionPathDiscoveryTest Coverage Results" MODIFIED="1664395381956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mh_gutenberg_version_toggler@PluginUrlFixerTest_maybe_fix_url_return_given_url_because_common_path_not_found_in_url.xml" NAME="PluginUrlFixerTest.maybe_fix_url_return_given_url_because_common_path_not_found_in_url Coverage Results" MODIFIED="1664388464032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mh_gutenberg_version_toggler@Service.xml" NAME="Service Coverage Results" MODIFIED="1664394835438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mh_gutenberg_version_toggler@tests.xml" NAME="tests Coverage Results" MODIFIED="1664396171592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mh_gutenberg_version_toggler@CachedSupportedVersionPathDiscoveryTest_for_theme.xml" NAME="CachedSupportedVersionPathDiscoveryTest.for_theme Coverage Results" MODIFIED="1664395371874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mh_gutenberg_version_toggler@PluginUrlFixerTest.xml" NAME="PluginUrlFixerTest Coverage Results" MODIFIED="1664387787678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mh_gutenberg_version_toggler@VersionActivatorTest.xml" NAME="VersionActivatorTest Coverage Results" MODIFIED="1664396373405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mh_gutenberg_version_toggler@PluginUrlFixerTest_maybe_fix_url_return_given_url_because_it_is_not_the_target_url.xml" NAME="PluginUrlFixerTest.maybe_fix_url_return_given_url_because_it_is_not_the_target_url Coverage Results" MODIFIED="1664388580169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mh_gutenberg_version_toggler@SupportedVersionPathDiscoveryTest.xml" NAME="SupportedVersionPathDiscoveryTest Coverage Results" MODIFIED="1664394620870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mh_gutenberg_version_toggler@SupportedVersionPathDiscoveryTest_for_theme_return_null_because_no_supported_versions_found.xml" NAME="SupportedVersionPathDiscoveryTest.for_theme_return_null_because_no_supported_versions_found Coverage Results" MODIFIED="1664394479080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mh_gutenberg_version_toggler@SupportedVersionPathDiscoveryTest_for_theme_return_null_because_not_readable_directory.xml" NAME="SupportedVersionPathDiscoveryTest.for_theme_return_null_because_not_readable_directory Coverage Results" MODIFIED="1664394813749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mh_gutenberg_version_toggler@SupportedVersionPathDiscoveryTest_for_theme_return_null_because_not_possible_to_find_compatible_version.xml" NAME="SupportedVersionPathDiscoveryTest.for_theme_return_null_because_not_possible_to_find_compatible_version Coverage Results" MODIFIED="1664394711247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

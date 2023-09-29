@@ -1,0 +1,87 @@
+{
+  "name": "inpsyde/mh-gutenberg-version-manager",
+  "description": "A lib that activate/deactivate a Gutenberg version depending on the Theme being activate",
+  "type": "library",
+  "license": "GPL-v2-or-later",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "inpsyde",
+      "email": "info@inpsyde.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "inpsyde/wp-app-container": "^1 || ^2",
+    "inpsyde/gutenberg-versions-mirror": "dev-main"
+  },
+  "require-dev": {
+    "vimeo/psalm": "^5",
+    "roots/wordpress": "^6.2",
+    "inpsyde/php-coding-standards": "^2",
+    "phpunit/phpunit": "^9.5",
+    "brain/monkey": "^2.6",
+    "php-stubs/wordpress-stubs": "@stable",
+    "mikey179/vfsstream": "^2.0",
+    "mockery/mockery": "^1.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Inpsyde\\GutenbergVersionManager\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Inpsyde\\GutenbergVersionManager\\Tests\\": "tests/src",
+      "Inpsyde\\GutenbergVersionManager\\Tests\\Unit\\": "tests/unit",
+      "Inpsyde\\GutenbergVersionManager\\Tests\\Integration\\": "tests/integration"
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://repo.packagist.com/inpsyde/mhh/"
+    },
+    {
+      "packagist.org": false
+    }
+  ],
+  "scripts": {
+    "cs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
+    "cs:fix": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf",
+    "cs:ci": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs --report-full --report-checkstyle=./phpcs-report.xml",
+    "psalm": "@php ./vendor/vimeo/psalm/psalm --show-info=false --no-progress --no-cache --output-format=compact",
+    "psalm:ci": "@php ./vendor/vimeo/psalm/psalm --show-info=false --no-progress --no-cache --output-format=github",
+    "tests:unit": "@php ./vendor/phpunit/phpunit/phpunit --testsuite=unit",
+    "tests:unit:no-cov": "@php ./vendor/phpunit/phpunit/phpunit --testsuite=unit --no-coverage",
+    "tests": [
+      "@tests:unit"
+    ],
+    "tests:no-cov": [
+      "@tests:unit:no-cov"
+    ],
+    "qa": [
+      "@cs",
+      "@psalm",
+      "@tests:no-cov"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "8.0"
+    },
+    "allow-plugins": {
+      "roots/wordpress-core-installer": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "inpsyde/*": true,
+      "composer/*": true
+    }
+  },
+  "extra": {
+    "wordpress-install-dir": "vendor/wordpress",
+    "installer-disable": [
+      "wordpress"
+    ]
+  }
+}
