@@ -20,17 +20,8 @@ class BodyClassesFilter
         $this->supportedVersions = $supportedVersions;
     }
 
-    /**
-     * @param array|string $bodyClasses
-     * @return array|string
-     * phpcs:disable Inpsyde.CodeQuality.ArgumentTypeDeclaration.NoArgumentType
-     * phpcs:disable Inpsyde.CodeQuality.ReturnTypeDeclaration.NoReturnType
-     */
-    public function addGutenbergVersionClass(\WP_Theme $theme, $bodyClasses)
+    public function addGutenbergVersionClass(\WP_Theme $theme, array|string $bodyClasses): array|string
     {
-        // phpcs:disable Inpsyde.CodeQuality.ArgumentTypeDeclaration.NoArgumentType
-        // phpcs:disable Inpsyde.CodeQuality.ReturnTypeDeclaration.NoReturnType
-
         $version = (string)$this->currentGutenbergVersionByTheme($theme);
         $cleanedVersion = \str_replace('.', '', $version);
 
@@ -38,7 +29,7 @@ class BodyClassesFilter
             return $bodyClasses;
         }
 
-        $className = "mh-gutenberg-{$cleanedVersion}";
+        $className = "inpsyde-gutenberg-{$cleanedVersion}";
         $classNames = \array_unique(
             \array_merge((array)$bodyClasses, [$className]),
         );

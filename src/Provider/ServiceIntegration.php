@@ -87,13 +87,13 @@ class ServiceIntegration extends App\Provider\EarlyBootedOnly
     {
         \add_filter(
             'plugins_url',
-            static fn(string $url) => \preg_replace(self::URL_FIXER_PREG_PATTERN, '$1/$2', $url),
+            static fn (string $url) => \preg_replace(self::URL_FIXER_PREG_PATTERN, '$1/$2', $url),
         );
     }
 
     private function addBodyClasses(): void
     {
-        $callback = static fn($classes) => $this->bodyClassesFilter->addGutenbergVersionClass(
+        $callback = fn (array|string $classes) => $this->bodyClassesFilter->addGutenbergVersionClass(
             \wp_get_theme(),
             $classes
         );
@@ -146,13 +146,13 @@ class ServiceIntegration extends App\Provider\EarlyBootedOnly
                 if ($version) {
                     $content .= ' ' . \sprintf(
                         /* translators: %s is the Gutenberg version */
-                            \_x(
-                                'Gutenberg Version %s',
-                                'Theme Information',
-                                'gutenberg-versions-manager'
-                            ),
-                            $version
-                        );
+                        \_x(
+                            'Gutenberg Version %s',
+                            'Theme Information',
+                            'gutenberg-versions-manager'
+                        ),
+                        $version
+                    );
                 }
 
                 return $content;

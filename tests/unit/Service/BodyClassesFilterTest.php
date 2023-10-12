@@ -25,7 +25,7 @@ class BodyClassesFilterTest extends UnitTestCase
 
         $classes = 'custom-classname';
         $result = $bodyClassesFilter->addGutenbergVersionClass($this->theme, $classes);
-        $this->assertEquals("$classes mh-gutenberg-1240", $result);
+        $this->assertEquals("$classes inpsyde-gutenberg-1240", $result);
     }
 
     /**
@@ -46,7 +46,7 @@ class BodyClassesFilterTest extends UnitTestCase
 
         $classes = ['custom-classname'];
         $result = $bodyClassesFilter->addGutenbergVersionClass($this->theme, $classes);
-        $this->assertEquals([...$classes, 'mh-gutenberg-1240'], $result);
+        $this->assertEquals([...$classes, 'inpsyde-gutenberg-1240'], $result);
     }
 
     /**
