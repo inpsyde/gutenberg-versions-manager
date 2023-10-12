@@ -24,7 +24,7 @@ class SupportedVersions
     }
 
     /**
-     * @return string[]|array
+     * @return string[]
      */
     public function forTheme(\WP_Theme $theme): array
     {
@@ -37,22 +37,9 @@ class SupportedVersions
 
         $configuration = (array)(include $lookupFile);
 
-        if (!\array_key_exists(self::VERSIONS_KEY, $configuration)) {
-            return [];
-        }
-
-        $configuration = \array_merge(
-            $this->cannedConfiguration(),
-            $configuration
+        return \array_filter(
+            (array)($configuration[self::VERSIONS_KEY] ?? null),
+            static fn (mixed $v) => \is_string($v),
         );
-
-        return $configuration[self::VERSIONS_KEY] ?? [];
-    }
-
-    private function cannedConfiguration(): array
-    {
-        return [
-            self::VERSIONS_KEY => [],
-        ];
     }
 }
