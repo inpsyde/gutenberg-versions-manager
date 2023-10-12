@@ -93,7 +93,9 @@ class ServiceIntegration extends App\Provider\EarlyBootedOnly
 
     private function addBodyClasses(): void
     {
-        $callback = fn (array|string $classes) => $this->bodyClassesFilter->addGutenbergVersionClass(
+        $callback = fn (
+            array|string $classes
+        ) => $this->bodyClassesFilter->addGutenbergVersionClass(
             \wp_get_theme(),
             $classes
         );
