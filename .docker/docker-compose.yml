@@ -3,7 +3,7 @@ services:
   php:
     build:
       context: ./php
-    container_name: mh-gutenberg-version-manager-php
+    container_name: gutenberg-versions-manager-php
     volumes:
       - type: bind
         source: ../

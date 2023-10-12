@@ -46,7 +46,7 @@ class ServiceIntegration extends App\Provider\EarlyBootedOnly
             $this->notice->addNotice(
                 \__(
                     'Gutenberg Version Manager cannot activate the Gutenberg plugin because a version of it is currently active. Please disable the Gutenberg plugin first.',
-                    'mh-gutenberg-version-manager'
+                    'gutenberg-versions-manager'
                 ),
                 Service\Notice::ERROR
             );
@@ -77,16 +77,8 @@ class ServiceIntegration extends App\Provider\EarlyBootedOnly
     private function activateGutenbergVersion(): bool
     {
         if (!$this->versionActivator->forTheme(\wp_get_theme())) {
-            $this->notice->addNotice(
-                \__(
-                    'Cannot load compatible Gutenberg version, the theme does not specify compatible versions or no compatible versions have been found.',
-                    'mh-gutenberg-version-manager'
-                ),
-                Service\Notice::ERROR
-            );
             return false;
         }
-        // phpcs:enable Inpsyde.CodeQuality.LineLength.TooLong
 
         return true;
     }
@@ -95,13 +87,13 @@ class ServiceIntegration extends App\Provider\EarlyBootedOnly
     {
         \add_filter(
             'plugins_url',
-            fn(string $url) => \preg_replace(self::URL_FIXER_PREG_PATTERN, '$1/$2', $url),
+            static fn(string $url) => \preg_replace(self::URL_FIXER_PREG_PATTERN, '$1/$2', $url),
         );
     }
 
     private function addBodyClasses(): void
     {
-        $callback = fn($classes) => $this->bodyClassesFilter->addGutenbergVersionClass(
+        $callback = static fn($classes) => $this->bodyClassesFilter->addGutenbergVersionClass(
             \wp_get_theme(),
             $classes
         );
@@ -131,7 +123,7 @@ class ServiceIntegration extends App\Provider\EarlyBootedOnly
                         \_x(
                             'Gutenberg Version %s',
                             'Theme Information',
-                            'mh-gutenberg-version-manager'
+                            'gutenberg-versions-manager'
                         ),
                         $version
                     );
@@ -153,14 +145,14 @@ class ServiceIntegration extends App\Provider\EarlyBootedOnly
 
                 if ($version) {
                     $content .= ' ' . \sprintf(
-                    /* translators: %s is the Gutenberg version */
-                        \_x(
-                            'Gutenberg Version %s',
-                            'Theme Information',
-                            'mh-gutenberg-version-manager'
-                        ),
-                        $version
-                    );
+                        /* translators: %s is the Gutenberg version */
+                            \_x(
+                                'Gutenberg Version %s',
+                                'Theme Information',
+                                'gutenberg-versions-manager'
+                            ),
+                            $version
+                        );
                 }
 
                 return $content;

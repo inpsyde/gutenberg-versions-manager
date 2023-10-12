@@ -8,7 +8,7 @@
     <arg name="extensions" value="php,inc" />
 
     <config name="testVersion" value="7.4-"/>
-    <config name="text_domain" value="mh-gutenberg-version-manager"/>
+    <config name="text_domain" value="gutenberg-versions-manager"/>
     <config name="ignore_warnings_on_exit" value="1"/>
 
     <rule ref="Inpsyde">
