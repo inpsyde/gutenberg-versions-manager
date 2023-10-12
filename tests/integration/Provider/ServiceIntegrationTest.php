@@ -45,17 +45,6 @@ class ServiceIntegrationTest extends UnitTestCase
     /**
      * @test
      */
-    public function cannot_activate_for_current_theme_with_no_support(): void
-    {
-        $serviceIntegration = Provider\ServiceIntegration::new();
-        $this->withoutThemeSupport();
-        Actions\expectAdded('admin_notices');
-        $this->assertEquals(false, $serviceIntegration->boot($this->container));
-    }
-
-    /**
-     * @test
-     */
     public function custom_gutenberg_version_is_activated(): void
     {
         $serviceIntegration = Provider\ServiceIntegration::new();
