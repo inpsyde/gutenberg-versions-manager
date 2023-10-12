@@ -3,7 +3,7 @@
   "description": "A lib that activate/deactivate a Gutenberg version depending on the Theme being activate",
   "type": "library",
   "license": "GPL-v2-or-later",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "authors": [
     {
       "name": "inpsyde",
