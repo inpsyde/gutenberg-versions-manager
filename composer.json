@@ -37,15 +37,6 @@
       "Inpsyde\\GutenbergVersionManager\\Tests\\Integration\\": "tests/integration"
     }
   },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://repo.packagist.com/inpsyde/mhh/"
-    },
-    {
-      "packagist.org": false
-    }
-  ],
   "scripts": {
     "cs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
     "cs:fix": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf",
