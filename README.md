@@ -1,4 +1,4 @@
-# Mh Gutenberg Versions Manager
+# Gutenberg Versions Manager
 
 [![PHP Quality Assurance](https://github.com/inpsyde/gutenberg-versions-manager/actions/workflows/php-qa.yml/badge.svg)](https://github.com/inpsyde/gutenberg-versions-manager/actions/workflows/php-qa.yml)
 
