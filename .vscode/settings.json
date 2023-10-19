@@ -5,5 +5,14 @@
   "phpCodeSniffer.autoExecutable": true,
   "[php]": {
     "editor.defaultFormatter": "obliviousharmony.vscode-php-codesniffer"
+  },
+  "files.exclude": {
+    "**/wp-stubs": true
+  },
+  "files.watcherExclude": {
+    "**/wp-stubs": true
+  },
+  "search.exclude": {
+    "**/wp-stubs": true
   }
 }

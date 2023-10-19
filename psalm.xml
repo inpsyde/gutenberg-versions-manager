@@ -16,11 +16,10 @@
     </projectFiles>
 
     <stubs>
-        <file name="vendor/php-stubs/wordpress-stubs/wordpress-stubs.php" />
+        <file name="vendor/inpsyde/wp-stubs/stubs/latest.php"/>
     </stubs>
 
     <issueHandlers>
-        <MixedAssignment errorLevel="suppress"/>
         <MissingClosureParamType errorLevel="suppress"/>
         <MissingClosureReturnType errorLevel="suppress"/>
         <UnresolvableInclude errorLevel="suppress"/>
