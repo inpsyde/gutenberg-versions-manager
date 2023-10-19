@@ -17,13 +17,12 @@
   },
   "require-dev": {
     "vimeo/psalm": "^5",
-    "roots/wordpress": "^6.2",
     "inpsyde/php-coding-standards": "^2",
     "phpunit/phpunit": "^9.5",
     "brain/monkey": "^2.6",
-    "php-stubs/wordpress-stubs": "@stable",
     "mikey179/vfsstream": "^2.0",
-    "mockery/mockery": "^1.5"
+    "mockery/mockery": "^1.5",
+    "roots/wordpress-no-content": "~6.2.0"
   },
   "autoload": {
     "psr-4": {
@@ -63,16 +62,9 @@
       "php": "8.0"
     },
     "allow-plugins": {
-      "roots/wordpress-core-installer": true,
       "dealerdirect/phpcodesniffer-composer-installer": true,
       "inpsyde/*": true,
       "composer/*": true
     }
-  },
-  "extra": {
-    "wordpress-install-dir": "vendor/wordpress",
-    "installer-disable": [
-      "wordpress"
-    ]
   }
 }

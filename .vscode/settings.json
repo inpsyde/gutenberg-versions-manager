@@ -1,0 +1,9 @@
+{
+  "php.format.codeStyle": "Off",
+  "phpCodeSniffer.standardCustom": "./phpcs.xml",
+  "phpCodeSniffer.standard": "Custom",
+  "phpCodeSniffer.autoExecutable": true,
+  "[php]": {
+    "editor.defaultFormatter": "obliviousharmony.vscode-php-codesniffer"
+  }
+}

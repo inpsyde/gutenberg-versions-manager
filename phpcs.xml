@@ -2,6 +2,7 @@
 <ruleset>
     <file>./src/</file>
     <file>./tests/</file>
+    <file>./.development/</file>
 
     <arg value="sp"/>
     <arg name="colors"/>
