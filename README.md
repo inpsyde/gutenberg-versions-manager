@@ -1,6 +1,6 @@
 # Gutenberg Versions Manager
 
-![banner.png]('.docs/img/banner.png')
+![banner.png](./docs/img/banner.png)
 
 [![PHP Quality Assurance](https://github.com/inpsyde/gutenberg-versions-manager/actions/workflows/php-qa.yml/badge.svg)](https://github.com/inpsyde/gutenberg-versions-manager/actions/workflows/php-qa.yml)
 
@@ -10,8 +10,8 @@ The package is served as a WordPress Mu Plugin and is installed under the approp
 
 ## Documentation
 
-1. [Development]('./docs/development.md')
-2. [App Integration]('./docs/app-integration.md')
+1. [Development](./docs/development.md)
+2. [App Integration](./docs/app-integration.md)
 
 ## Requirements
 
