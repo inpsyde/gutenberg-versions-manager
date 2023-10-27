@@ -2,52 +2,18 @@
 
 [![PHP Quality Assurance](https://github.com/inpsyde/gutenberg-versions-manager/actions/workflows/php-qa.yml/badge.svg)](https://github.com/inpsyde/gutenberg-versions-manager/actions/workflows/php-qa.yml)
 
-The Gutenberg Version Manager is a Wp App Container Package which allow Themes to specify a list of
-compatible Gutenberg Versions and load the first compatible one.
+The Gutenberg Version Manager is a [Wp App Container](https://github.com/inpsyde/wp-app-container) Package allowing themes to specify a list of compatible Gutenberg Versions and load the first compatible one.
 
-The Package will look into the current theme `config/gutenberg.php` file to retrieve the list of the compatible Gutenberg
-versions.
+The package is served as a WordPress Mu Plugin and is installed under the appropriate WP directory.
 
-This package depends on [Gutenberg Versions Mirror](https://github.com/inpsyde/gutenberg-versions-mirror) to load the compatible version of Gutenberg.
+## Documentation
 
-Here an example of how the file looks like
-
-```php
-<?php
-
-declare(strict_types=1);
-
-return [
-    'versions' => [
-        '13.9.0',
-        '12.8.0',
-        '11.14.1',
-    ],
-];
-```
-
-## Application Integration
-
-Just add the Package to the application.
-
-```php
-\Inpsyde\App\Bootstrap\app()->addPackage(
-    \Inpsyde\GutenbergVersionManager\Package::new()
-);
-```
-
-## Development
-
-The project rely on `@wordpress/env` and it contains all the necessary configuration to have the development environment up and running.
-
-Simply run `yarn wp-env start` or `yarn wp-env start --xdebug` and you're good to go.
-
-The development configuration includes
-
-- A small theme which is configured to require a compatible Gutenberg version
-- A Mu Plugin which is configured to load the Gutenberg Version Manager Package
+1. [Development]('./docs/development.md')
+2. [App Integration]('./docs/app-integration.md')
 
 ## Requirements
+
+This package depends on [Gutenberg Versions Mirror](https://github.com/inpsyde/gutenberg-versions-mirror) to load the compatible version of Gutenberg.
 
 * PHP >= 8.0
 * WordPress >= 6.2
