@@ -55,9 +55,9 @@ class SupportedVersionsTest extends Tests\UnitTestCase
     }
 
     /**
-     * @test The `versions` entry does not exist and empty `versions` is returned
+     * @test Empty file content will still return an empty `versions` entry
      */
-    public function return_empty_versions_entry_if_entry_does_not_exists(): void
+    public function return_empty_versions_entry_if_file_content_is_empty(): void
     {
         $this->theme
             ->shouldReceive('get_template_directory')
@@ -70,13 +70,13 @@ class SupportedVersionsTest extends Tests\UnitTestCase
     }
 
     /**
-     * @test Empty file content will still return an empty `versions` entry
+     * @test The config directory does not exists
      */
-    public function return_empty_versions_entry_if_file_content_is_empty(): void
+    public function return_empty_versions_entry_if_config_directory_does_not_exists(): void
     {
         $this->theme
             ->shouldReceive('get_template_directory')
-            ->andReturn($this->themesPath('not-exists-versions-theme-name'));
+            ->andReturn($this->themesPath('theme-without-config-directory'));
 
         $supportedThemeVersions = Service\SupportedVersions::new();
         $versions = $supportedThemeVersions->forTheme($this->theme);

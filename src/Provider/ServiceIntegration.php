@@ -44,7 +44,7 @@ class ServiceIntegration extends App\Provider\EarlyBootedOnly
         // phpcs:disable Inpsyde.CodeQuality.LineLength.TooLong
         if ($this->isGutenbergPluginActive()) {
             $this->notice->addNotice(
-                \__(
+                __(
                     'Gutenberg Version Manager cannot activate the Gutenberg plugin because a version of it is currently active. Please disable the Gutenberg plugin first.',
                     'gutenberg-versions-manager'
                 ),

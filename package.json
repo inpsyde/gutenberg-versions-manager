@@ -1,6 +1,5 @@
 {
   "name": "@inpsyde/gutenberg-versions-mirror",
-  "version": "1.0.0",
   "description": "A lib that activate/deactivate a Gutenberg version depending on the Theme being activate",
   "main": "index.js",
   "repository": "git@github.com:inpsyde/gutenberg-versions-manager.git",
@@ -10,6 +9,7 @@
     "@wordpress/env": "^8.10.0"
   },
   "scripts": {
-    "wp-env": "wp-env"
+    "wp-env:start": "wp-env start --environment=development",
+    "wp-env:stop": "wp-env stop"
   }
 }

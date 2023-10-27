@@ -1,5 +1,5 @@
 {
-  "core": "WordPress/WordPress#6.2",
+  "core": "./vendor/roots/wordpress-no-content",
   "themes": ["./.development/themes/test-theme"],
   "env": {
     "development": {

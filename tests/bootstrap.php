@@ -1,17 +1,9 @@
-<?php // phpcs:disable
+<?php
+
 declare(strict_types=1);
 
-(static function (string $libPath): void {
-    $vendorDir = "{$libPath}/vendor";
-    $phpTestDir = __DIR__;
-    $testsDir = \dirname($phpTestDir);
+namespace Inpsyde\GutenbergVersionManager\Tests;
 
-    if (!\realpath($vendorDir)) {
-        die('Please install via Composer before running tests.');
-    }
+require_once __DIR__ . '/functions.php';
 
-    /** @noinspection PhpIncludeInspection */
-    require_once "{$vendorDir}/autoload.php";
-})(
-    \dirname(__DIR__)
-);
+bootstrap(\dirname(__DIR__));

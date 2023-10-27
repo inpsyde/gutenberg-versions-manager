@@ -47,6 +47,7 @@ PHP,
                     'gutenberg.php' => '',
                 ],
             ],
+            'theme-without-config-directory' => [],
         ],
     ];
 
