@@ -22,7 +22,6 @@
     "brain/monkey": "^2.6",
     "mikey179/vfsstream": "^2.0",
     "mockery/mockery": "^1.5",
-    "php-stubs/wordpress-stubs": "~6.2.0",
     "roots/wordpress-no-content": "~6.2.0"
   },
   "autoload": {
