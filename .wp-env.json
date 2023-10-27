@@ -6,7 +6,8 @@
       "phpVersion": "8.0",
       "mappings": {
         "wp-content/mu-plugins/mu-plugin.php": "./.development/mu-plugin.php",
-        "wp-content/mu-plugins/gutenberg-versions-manager": "./"
+        "wp-content/mu-plugins/gutenberg-versions-manager": "./",
+        "wp-content/plugins/gutenberg-versions-mirror": "./vendor/inpsyde/gutenberg-versions-mirror"
       }
     }
   }
