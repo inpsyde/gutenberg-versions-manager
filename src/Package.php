@@ -19,6 +19,7 @@ class Package implements App\Provider\Package
 
     public function providers(): App\Provider\ServiceProviders
     {
+        /** @psalm-suppress PossiblyUnusedMethod */
         return App\Provider\ServiceProviders::new()
             ->add(Provider\ServiceIntegration::new());
     }
