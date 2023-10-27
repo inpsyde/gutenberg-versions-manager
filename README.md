@@ -1,6 +1,6 @@
-# Mh Gutenberg Version Manager
+# Gutenberg Versions Manager
 
-[![PHP Quality Assurance](https://github.com/inpsyde/mh-gutenberg-version-manager/actions/workflows/php-qa.yml/badge.svg)](https://github.com/inpsyde/mh-gutenberg-version-manager/actions/workflows/php-qa.yml)
+[![PHP Quality Assurance](https://github.com/inpsyde/gutenberg-versions-manager/actions/workflows/php-qa.yml/badge.svg)](https://github.com/inpsyde/gutenberg-versions-manager/actions/workflows/php-qa.yml)
 
 The Gutenberg Version Manager is a Wp App Container Package which allow Themes to specify a list of
 compatible Gutenberg Versions and load the first compatible one.
@@ -35,6 +35,17 @@ Just add the Package to the application.
     \Inpsyde\GutenbergVersionManager\Package::new()
 );
 ```
+
+## Development
+
+The project rely on `@wordpress/env` and it contains all the necessary configuration to have the development environment up and running.
+
+Simply run `yarn wp-env start` or `yarn wp-env start --xdebug` and you're good to go.
+
+The development configuration includes
+
+- A small theme which is configured to require a compatible Gutenberg version
+- A Mu Plugin which is configured to load the Gutenberg Version Manager Package
 
 ## Requirements
 

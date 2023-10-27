@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Listen for XDebug",
+      "type": "php",
+      "request": "launch",
+      "port": 9003,
+      "cwd": "${workspaceFolder}",
+      "pathMappings": {
+        "/var/www/html/wp-content/mu-plugins/mu-plugin.php": "${workspaceFolder}/.development/mu-plugin.php",
+        "/var/www/html/wp-content/mu-plugins/gutenberg-versions-manager": "${workspaceFolder}/src"
+      }
+    }
+  ]
+}

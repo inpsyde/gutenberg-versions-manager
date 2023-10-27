@@ -1,9 +1,9 @@
 {
-  "name": "inpsyde/mh-gutenberg-version-manager",
+  "name": "inpsyde/gutenberg-versions-manager",
   "description": "A lib that activate/deactivate a Gutenberg version depending on the Theme being activate",
   "type": "library",
   "license": "GPL-v2-or-later",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "authors": [
     {
       "name": "inpsyde",
@@ -17,13 +17,13 @@
   },
   "require-dev": {
     "vimeo/psalm": "^5",
-    "roots/wordpress": "^6.2",
     "inpsyde/php-coding-standards": "^2",
     "phpunit/phpunit": "^9.5",
     "brain/monkey": "^2.6",
-    "php-stubs/wordpress-stubs": "@stable",
     "mikey179/vfsstream": "^2.0",
-    "mockery/mockery": "^1.5"
+    "mockery/mockery": "^1.5",
+    "php-stubs/wordpress-stubs": "~6.2.0",
+    "roots/wordpress-no-content": "~6.2.0"
   },
   "autoload": {
     "psr-4": {
@@ -37,15 +37,6 @@
       "Inpsyde\\GutenbergVersionManager\\Tests\\Integration\\": "tests/integration"
     }
   },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://repo.packagist.com/inpsyde/mhh/"
-    },
-    {
-      "packagist.org": false
-    }
-  ],
   "scripts": {
     "cs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
     "cs:fix": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf",
@@ -72,16 +63,9 @@
       "php": "8.0"
     },
     "allow-plugins": {
-      "roots/wordpress-core-installer": true,
       "dealerdirect/phpcodesniffer-composer-installer": true,
       "inpsyde/*": true,
       "composer/*": true
     }
-  },
-  "extra": {
-    "wordpress-install-dir": "vendor/wordpress",
-    "installer-disable": [
-      "wordpress"
-    ]
   }
 }

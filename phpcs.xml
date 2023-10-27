@@ -2,13 +2,14 @@
 <ruleset>
     <file>./src/</file>
     <file>./tests/</file>
+    <file>./.development/</file>
 
     <arg value="sp"/>
     <arg name="colors"/>
     <arg name="extensions" value="php,inc" />
 
-    <config name="testVersion" value="7.4-"/>
-    <config name="text_domain" value="mh-gutenberg-version-manager"/>
+    <config name="testVersion" value="8.0-"/>
+    <config name="text_domain" value="gutenberg-versions-manager"/>
     <config name="ignore_warnings_on_exit" value="1"/>
 
     <rule ref="Inpsyde">

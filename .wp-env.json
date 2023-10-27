@@ -1,0 +1,13 @@
+{
+  "core": "./vendor/roots/wordpress-no-content",
+  "themes": ["./.development/themes/test-theme"],
+  "env": {
+    "development": {
+      "phpVersion": "8.0",
+      "mappings": {
+        "wp-content/mu-plugins/mu-plugin.php": "./.development/mu-plugin.php",
+        "wp-content/mu-plugins/gutenberg-versions-manager": "./"
+      }
+    }
+  }
+}
