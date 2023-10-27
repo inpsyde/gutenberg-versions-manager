@@ -10,11 +10,6 @@ use Inpsyde\GutenbergVersionManager\Service;
 
 class ServiceIntegration extends App\Provider\EarlyBootedOnly
 {
-    private const RELATIVE_VERSIONS_PATH = '/inpsyde/gutenberg-mirror';
-
-    // phpcs:ignore Inpsyde.CodeQuality.LineLength.TooLong
-    private const URL_FIXER_PREG_PATTERN = '~^(https?://.+?/wp-content).+?(client-mu-plugins/vendor' . self::RELATIVE_VERSIONS_PATH . '/[0-9\.-]+.+?)~';
-
     private Service\VersionActivator $versionActivator;
 
     private Service\Notice $notice;
@@ -57,7 +52,6 @@ class ServiceIntegration extends App\Provider\EarlyBootedOnly
             return false;
         }
 
-        $this->fixPluginsUrl();
         $this->addBodyClasses();
         $this->activeGutenbergVersionThemeRowFilter();
         $this->activeGutenbergVersionAtAGlanceInfo();
@@ -81,14 +75,6 @@ class ServiceIntegration extends App\Provider\EarlyBootedOnly
         }
 
         return true;
-    }
-
-    private function fixPluginsUrl(): void
-    {
-        \add_filter(
-            'plugins_url',
-            static fn (string $url) => \preg_replace(self::URL_FIXER_PREG_PATTERN, '$1/$2', $url),
-        );
     }
 
     private function addBodyClasses(): void
