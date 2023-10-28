@@ -21,8 +21,17 @@
         </ignoreFiles>
     </projectFiles>
 
+    <extraFiles>
+        <directory name="vendor/roots/wordpress-no-content"/>
+    </extraFiles>
+
+    <!-- https://github.com/vimeo/psalm/issues/5791 -->
+    <!-- Do not stub noop.php -->
     <stubs>
-        <file name="vendor/php-stubs/wordpress-stubs/wordpress-stubs.php"/>
+        <file name="vendor/roots/wordpress-no-content/wp-includes/l10n.php"/>
+        <file name="vendor/roots/wordpress-no-content/wp-includes/theme.php"/>
+        <file name="vendor/roots/wordpress-no-content/wp-includes/formatting.php"/>
+        <file name="vendor/roots/wordpress-no-content/wp-includes/kses.php"/>
     </stubs>
 
     <issueHandlers>
